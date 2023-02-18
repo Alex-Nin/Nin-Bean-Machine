@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/18795bf9d8.js" crossorigin="anonymous"></script>
+  <title>The Bean Machine</title>
+</head>
+<body>
+  <nav>
+    <a href="index.html" id="logo-txt">The Bean Machine</a>
+    <div class="top-btns" id="menuBtns">
+      <img src=assets/close-menu.png id="close-menu-btn" onclick="hideMenu()"/>
+      <ul>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="index2.html">Selection</a></li>
+        <li><a href="index3.html" id="sign-up-btn">SIGN UP</a></li>
+        <li><a href="index.html" id="log-out-btn" onclick="isSignedIn()">LOGOUT</a></li>
+      </ul>
+    </div>
+    <img src=assets/menu.png id="menu-btn" onclick="showMenu()"/>
+  </nav>
+  <header>
+    <div class="header-desktop">
+      <div class="header-content-container">
+        <div class="header-text-container">
+          <h1>The Bean Machine</h1>
+          <p>Coffee Bean Shop</p>
+        </div>
+        <div class="header-input">
+          <input type="text" placeholder="Search for a coffee bean"/>
+          <div class="search-btn"><a href="#"><img src="assets/arrow_right.png" /></a></div>
+        </div>
+      </div>
+      <div class="header-logo-container">
+        <a href="#"><img src="./assets/illustration.png" alt="animated person with coffee"/></a>
+      </div>
+    </div>
+    <div class="header-tablet-input">
+      <input type="text" 
+      placeholder="Search for a coffee bean"/>
+      <div class="search-btn">
+        <a href="#"><img src="assets/arrow_right.png" /></a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="main-info-container">
+      <h2 id="about-section">About</h2>
+      <p>We are a specialty Coffee Bean shop based in Barcelona, Spain.</p>
+      <p>We are passionate about the coffee bean quality so we source our beans from all over the world in order to give you the best out there!</p>
+      <p>Visit our specialty coffee shop at <a href="#"><strong>La Rambla 204</strong></a>, where we serve the best coffee in Barcelona.</p>
+    </div>
+    <div class="main-offers-container">
+      <h2>Special Offers</h2>
+      <div class="special-offer-container">
+        <div class="special-offer">
+          <img src="./assets/coffee_beans.png" alt="coffee_beans"/>
+          <h4>Costa Rica Single Origin</h4>
+          <button id="costa-rica-buy-btn">Buy</button>
+        </div>
+        <div class="special-offer">
+          <img src="./assets/coffee_beans.png" alt="coffee_beans"/>
+          <h4>Brazil Medium Roast</h4>
+          <button id="brazil-buy-btn">Buy</button>
+        </div>
+        <div class="special-offer">
+          <img src="./assets/coffee_beans.png" alt="coffee_beans"/>
+          <h4>Columbia Single Origin</h4>
+          <button id="columbia-buy-btn">Buy</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-info">
+      <p><em>Find us on social media</em></p>
+    </div> 
+    <div class="footer-logos">
+      <img class="item" src="./assets/insta-logo.png" alt="social-media-logo"/>
+      <img class="item" src="./assets/twitter-logo.png" alt="social-media-logo"/>
+      <img class="item" src="./assets/fb-logo.png" alt="social-media-logo"/>
+    </div>
+  </footer>
+    <script src=script.js></script>
+</body>
+</html>

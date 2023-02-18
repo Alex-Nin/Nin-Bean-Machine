@@ -1,0 +1,67 @@
+#log-in-page {
+    display: none;
+}
+
+#log-in-page,
+#sign-up-page {
+    margin: 139px auto;
+    width: 47%;
+}
+
+h2 {
+    font-size: 60px;
+    margin: 21px 155px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 120px;
+}
+
+.field-input {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 40px;
+    border: 1px solid black;
+}
+
+.input-error {
+    color: red;
+    border: 1px solid red;
+}
+
+.no-error-message {
+    display: none;
+}
+
+.error-message-style {
+    margin: 0;
+    color: red;
+    text-align: center;
+}
+
+.login-or-signup-bottom-message {
+    text-align: center;
+}
+
+#page-login-btn,
+#page-signup-btn {
+    background-color: #FF5678;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#swap-login-signup-btn {
+    background-color: white;
+    color: #FF5678;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+}

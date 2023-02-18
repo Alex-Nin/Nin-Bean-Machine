@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" >
+  <link rel="stylesheet" href="./style2.css" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/18795bf9d8.js" crossorigin="anonymous"></script>
+  <title>The Bean Machine-Selection</title>
+</head>
+  <body>
+    <nav>
+      <a href="index.html" id="logo-txt">The Bean Machine</a>
+      <div class="top-btns" id="menuBtns">
+        <img src=assets/close-menu.png 
+          id="close-menu-btn" onclick="hideMenu()"/>
+        <ul>
+          <li><a href="index.html#about-section">About</a></li>
+          <li><a href="index2.html">Selection</a></li>
+          <li><a href="index3.html" id="sign-up-btn">SIGN UP</a></li>
+          <li><a href="index.html" id="log-out-btn" onclick="isSignedIn()">LOGOUT</a></li>
+        </ul>
+      </div>
+      <img src=assets/menu.png id="menu-btn" onclick="showMenu()"/>
+    </nav>
+    <header>
+      <h2>Selection</h2>
+      <div class="sort-menu"></div>
+    </header>
+    <section>
+      <main>
+        <div class="coffee-item">
+          <p class="avail-tag">Available</p>
+          <img src="assets/coffee_beans.png"/>
+          
+          <div class="item-description">
+            <p>Brazilian Single Blend</p>
+            <p>$24</p>
+          </div>
+          <p class="origin">Origin</p>
+          <a href="#" id="buy-btn-1A">Buy</a>
+        </div>
+        <div class="coffee-item">
+          <p class="avail-tag">Available</p>
+          <img src="assets/coffee_beans.png"/>
+          <div class="item-description">
+            <p>Brazilian Single Blend</p>
+            <p>$24</p>
+          </div>
+          <p class="origin">Origin</p>
+          <a href="#" id="buy-btn-1B">Buy</a>
+        </div>
+        <div class="coffee-item">
+          <p class="avail-tag">Available</p>
+          <img src="assets/coffee_beans.png"/>
+          <div class="item-description">
+            <p>Brazilian Single Blend</p>
+            <p>$24</p>
+          </div>
+          <p class="origin">Origin</p>
+          <a href="#" id="buy-btn-1C">Buy</a>
+        </div>
+        <div class="coffee-item">
+          <p class="avail-tag">Available</p>
+          <img src="assets/coffee_beans.png"/>
+          <div class="item-description">
+            <p>Brazilian Single Blend</p>
+            <p>$24</p>
+          </div>
+          <p class="origin">Origin</p>
+          <a href="#" id="buy-btn-2A">Buy</a>
+        </div>
+        <div class="coffee-item">
+          <p class="avail-tag">Available</p>
+          <img src="assets/coffee_beans.png"/>
+          <div class="item-description">
+            <p>Brazilian Single Blend</p>
+            <p>$24</p>
+          </div>
+          <p class="origin">Origin</p>
+          <a href="#" id="buy-btn-2B">Buy</a>
+        </div>
+        <div class="coffee-item">
+          <p class="avail-tag">Available</p>
+          <img src="assets/coffee_beans.png"/>
+          <div class="item-description">
+            <p>Brazilian Single Blend</p>
+            <p>$24</p>
+          </div>
+          <p class="origin">Origin</p>
+          <a href="#" id="buy-btn-2C">Buy</a>
+        </div>
+        <div class="coffee-item">
+          <p class="avail-tag">Available</p>
+          <img src="assets/coffee_beans.png"/>
+          <div class="item-description">
+            <p>Brazilian Single Blend</p>
+            <p>$24</p>
+          </div>
+          <p class="origin">Origin</p>
+          <a href="#" id="buy-btn-3A">Buy</a>
+        </div>
+        <div class="coffee-item">
+          <p class="avail-tag">Available</p>
+          <img src="assets/coffee_beans.png"/>
+          <div class="item-description">
+            <p>Brazilian Single Blend</p>
+            <p>$24</p>
+          </div>
+          <p class="origin">Origin</p>
+          <a href="#" id="buy-btn-3B">Buy</a>
+        </div>
+        <div class="coffee-item">
+          <p class="avail-tag">Available</p>
+          <img src="assets/coffee_beans.png"/>
+          <div class="item-description">
+            <p>Brazilian Single Blend</p>
+            <p>$24</p>
+          </div>
+          <p class="origin">Origin</p>
+          <a href="#" id="buy-btn-3C">Buy</a>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-info">
+          <p><em>Find us on social media</em></p>
+        </div> 
+        <div class="footer-logos">
+          <img class="item" src="/assets/insta-logo.png" 
+            alt="social-media-logo"/>
+          <img class="item" src="/assets/twitter-logo.png" 
+            alt="social-media-logo"/>
+          <img class="item" src="/assets/fb-logo.png" 
+            alt="social-media-logo"/>
+        </div>
+      </footer>
+    </section>
+    <script src=script.js></script>
+  </body>
+</html>

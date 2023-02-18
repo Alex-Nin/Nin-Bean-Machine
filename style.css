@@ -1,0 +1,300 @@
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+header, main {
+  width: 95%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px 10px 35px;
+}
+
+.top-btns a{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+#logo-txt {
+  text-decoration: none;
+  font-weight: 800;
+  color: #FF5678;
+  font-size: 20px;
+  align-self: center;
+}
+
+#sign-up-btn,
+#log-out-btn{
+  background-color: #FF5678;
+  padding: 4px 20px;
+  border-radius: 24px;
+  color: white;
+  font-weight: 800;
+}
+
+#log-out-btn {
+  display: none;
+}
+
+.top-btns ul li {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  padding-right: 40px;
+  font-size: 12px;
+  
+}
+
+
+.login-btn {
+  border: none;
+  background-color: #FF5678;
+  color: white;
+  border-radius: 36%;
+  padding: 4px 10px;
+}
+
+
+header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-desktop {
+  box-sizing: border-box;
+  display: flex;
+  padding-top: 30px;
+}
+
+h1 {
+  font-size: 77px;
+  font-weight: 800;
+  margin: 0 auto;
+}
+
+.header-content-container{
+  width: 60%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.header-text-container p {
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.header-input {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.header-tablet-input {
+  display: none;
+}
+
+.header-input input, 
+.header-tablet-input input{
+  border-radius: 15px;
+  background-color: #F6F2EF;
+  height: 30px;
+  flex-basis: 70%;
+  border: none;
+  padding: 7px 13px;
+}
+
+.search-btn {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: #FF5678;
+  color: white;
+  border-radius: 50%;
+}
+
+.search-btn img {
+  position: relative;
+  top: 4px;
+  width: 80%;
+}
+
+.header-logo-container{
+  width: 50%;
+  box-sizing:border-box;
+  align-self: center;
+}
+
+.header-logo-container img{
+  max-width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-info-container {
+  margin-top: 50px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+
+.main-info-container h2,
+.main-offers-container h2 {
+  font-weight: 800;
+}
+
+.main-offers-container h2{
+  padding: 30px 0;
+}
+
+.main-info-container p {
+  font-size: 14px;
+  font-family: 'Nunito-sans', sans-serif;
+}
+
+.main-info-container a {
+  color: #FF5678;
+}
+
+.special-offer-container {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+}
+
+.special-offer {
+  background-color: #F6F2EF;
+  border-radius: 40px;
+  text-align: center;
+  padding: 0 0 20px;
+  font-size: 20px;
+}
+
+.special-offer img {
+  width: 100%;
+}
+
+#costa-rica-buy-btn, 
+#brazil-buy-btn, 
+#columbia-buy-btn {
+  background-color: #FF5678;
+  border: none;
+  color: white;
+  padding: 10px 35px;
+  border-radius: 40px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  height: 7vh;
+  color: white;
+  font-size: 12px;
+  padding: 30px 0;
+  margin-top: 100px;
+}
+
+.footer-logos {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    height: 4vh;
+    justify-content: space-around;
+}
+
+.item {
+  width: 20%;
+}
+
+#close-menu-btn,
+#menu-btn {
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .header-content-container {
+    display: none;
+  }
+
+  .header-tablet-input {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+  .header-logo-container {
+    width: 100%;
+  }
+
+  .top-btns ul li {
+    display: block;
+    margin: 15px;
+    font-size: 30px;
+  }
+
+  .top-btns ul {
+    margin-top: 59px;
+  }
+
+  .top-btns {
+    position: absolute;
+    background-color: #FF5678;
+    height: 40vh;
+    width: 100%;
+    top: -500px;
+    left: 0;
+    text-align: center;
+    z-index: 3;
+    margin: 0;
+    transition: 0.8s;
+    border-radius: 0 0 40px 40px;
+  }
+
+  #close-menu-btn,
+  #menu-btn{
+    display: block;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  #close-menu-btn {
+    position: absolute;
+    right: 29px;
+    top: 10px;
+  }
+
+  .special-offer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+@media screen and (max-width: 450px) {
+  .special-offer-container {
+    grid-template-columns: 1fr;
+  }
+}

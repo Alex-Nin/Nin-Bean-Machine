@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" >
+  <link rel="stylesheet" href="./style3.css" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/18795bf9d8.js" crossorigin="anonymous"></script>
+  <title>The Bean Machine</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html" id="logo-txt">The Bean Machine</a>
+        <div class="top-btns" id="menuBtns">
+          <img src=assets/close-menu.png 
+            id="close-menu-btn" onclick="hideMenu()"/>
+          <ul>
+            <li><a href="index.html#about-section">About</a></li>
+            <li><a href="index2.html">Selection</a></li>
+            <li><a href="index3.html" id="sign-up-btn">SIGN UP</a></li>
+            <li><a href="index.html" id="log-out-btn" onclick="isSignedIn()">LOGOUT</a></li>
+          </ul>
+        </div>
+        <img src=assets/menu.png id="menu-btn" onclick="showMenu()"/>
+      </nav>
+    <div id="log-in-page">
+        <h2>Log In</h2>
+        <form id="log-in-form">
+            <input
+            class="field-input"
+            id="login-email"
+            type="text"
+            placeholder="Email"
+            required/>
+            <p id="login-email-input-error-message" class="error-message-style no-error-message"></p>
+            <input
+            class="field-input"
+            id="login-password"
+            type="password"
+            placeholder="Password"
+            required/>
+            <p id="login-password-input-error-message" class="error-message-style no-error-message"></p>
+            <button id="page-login-btn" type="submit">LOG IN</button>
+        </form>
+        <p class="login-or-signup-bottom-message">Don't have an account? Sign up right <a id="swap-login-signup-btn" onclick="swapToSignUp()">here</a>. Its free!</p>
+    </div>
+    <div id="sign-up-page">
+      <p class="login-or-signup-bottom-message">Have an account? Log in right <a id="swap-login-signup-btn" onclick="swapToLogIn()">here</a>.</p>
+        <h2>Sign up</h2>
+        <form id="sign-up-form">
+            <input 
+            class="field-input" 
+            id="fname" 
+            type="text" 
+            name="fname"
+            placeholder="First Name" 
+            required 
+            />
+            <input 
+            class="field-input" 
+            id="lname" 
+            type="text" 
+            name="lname"
+            placeholder="Last Name" 
+            required 
+            />
+            <input 
+            class="field-input" 
+            id="email" 
+            type="email"
+            name="email"
+            placeholder="Email" 
+            required 
+            />
+            <p id="email-input-error-message" class="error-message-style no-error-message"></p>
+            <input 
+            class="field-input" 
+            id="username" 
+            type="text" 
+            name="username"
+            placeholder="Username" 
+            required
+            />
+            <p id="username-input-error-message" class="error-message-style no-error-message"></p>
+            <input 
+            class="field-input" 
+            id="password" 
+            type="password" 
+            name="password"
+            placeholder="Password" 
+            required
+            />
+            <p id="password-input-error-message" class="error-message-style no-error-message"></p>
+            <input 
+            class="field-input" 
+            id="verify-password" 
+            type="password"
+            name="verify-password"
+            placeholder="Re-Enter Password"
+            required
+            />
+            <p id="verify-password-input-error-message" class="error-message-style no-error-message"></p>
+            <div class="check-box">
+                <input type="checkbox" name="terms-of-service" required />
+                <label for="terms-of-service">By checking this box you agree with our terms of service conditions.</label>
+                <br /><br />
+                <input type="checkbox" name="privacy-policy" required />
+                <label for="privacy-policy">By checking this box you agree with our privacy policy.</label>
+            </div>
+            <button id="page-signup-btn" type="submit">SIGN UP</button>
+            <p id="incomplete-input-error-message" class="error-message-style no-error-message"></p>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-info">
+          <p><em>Find us on social media</em></p>
+        </div> 
+        <div class="footer-logos">
+          <img class="item" src="./assets/insta-logo.png" alt="social-media-logo"/>
+          <img class="item" src="./assets/twitter-logo.png" alt="social-media-logo"/>
+          <img class="item" src="./assets/fb-logo.png" alt="social-media-logo"/>
+        </div>
+    </footer>
+      <script src=script.js></script>
+</body>
+</html>

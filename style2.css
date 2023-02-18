@@ -1,0 +1,86 @@
+header {
+  display: flex;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+.coffee-item {
+  background-color: #F6F2EF;
+  border-radius: 40px;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.avail-tag {
+  position: absolute;
+  background-color: #149770;
+  border-radius: 0px 40px 40px 0;
+  margin: 30px 0;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  height: 29px;
+  padding: 0 20px;
+  z-index: 2;
+}
+
+
+.coffee-item a {
+  text-decoration: none;
+  color: white;
+  background-color: #FF5678;
+  padding: 10px 62px;
+  border-radius: 50px;
+  font-weight: 800;
+}
+
+.coffee-item img {
+  width: 100%;
+}
+
+.item-description {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+}
+
+
+.item-description p {
+  margin: 10px 0 0;
+}
+
+.origin {
+  width: 36%;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+}
